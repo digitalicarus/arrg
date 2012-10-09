@@ -14,11 +14,16 @@ An AMD module that slurped in rule text (which is really just JSON) and produced
 argument processing code could also be another step. In this way you could make what is effectively 
 precompilers for JS which took a declarative syntax for code generation. 
 
+<b>
 Currently a simple argument checking system check.js is the only piece somewhat fully implemented.
 It can take simple prose such as "I need an integer which is > 2 and < 5" and check all of these things.
+It's not a NLP, but that would be fun :)
+</b>
 
 A potential readme syntax guide for the processor follows:
 
+<pre>
+<code>
 /**                                                                                                                      
  *                                                                                                                       
  * process(rules, arguments)                                                                                             
@@ -49,4 +54,6 @@ A potential readme syntax guide for the processor follows:
  * inlineErrors:                                                                                                         
  * logLevel:                                                                                                             
  */   
+</code>
+</pre>
 
